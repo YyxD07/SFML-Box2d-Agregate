@@ -25,7 +25,7 @@ int main()
         // window is kind of world-ish?
         sf::RenderWindow worldViable(sf::VideoMode(UniversalConstants::kWindowWidth,UniversalConstants::kWindowHeight),"?");
 
-    // ground box executed with static body
+    /**ground box executed with static body*/
     b2BodyDef groundBodyDef;
     groundBodyDef.position.Set(0.0f,-150.0f);
     b2Body* groundBody = world.CreateBody(&groundBodyDef); //world is the one to create and destroy bodies
@@ -155,16 +155,20 @@ int main()
     /***Circle testing***/
     b2BodyDef krog_def;
     krog_def.position.Set(0.0f, -100.0f);
-    b2Body* krog = world.CreateBody(&krog_def);
+    B2ToSf::SFB2Body agregateCircle(world.CreateBody(&krog_def));
+    //b2Body* krog = world.CreateBody(&krog_def);
 
     b2CircleShape krog_shape;
     krog_shape.m_radius = 30;
-    krog->CreateFixture(&krog_shape,0.0f);
+    B2ToSf::SfFixtureGraphical agregateCircleGraphical(-30,0,90,sf::Color::White,sf::Color::Green);
+    agregateCircle.addFixture(&krog_shape,0,agregateCircleGraphical);
+    agregateCircle.reacquaintSfB2Fixts();
+    //krog->CreateFixture(&krog_shape,0.0f);
 
-        B2ToSf::EdgyFan krog_visable = Transl8::circle(krog_shape,30);
+        /*B2ToSf::EdgyFan krog_visable = Transl8::circle(krog_shape,30);
         krog_visable.setPosition(Transl8::vec2(krog->GetPosition()));
         krog_visable.setOutlineThickness(-30);
-        krog_visable.setOutlineColor(sf::Color::Green);
+        krog_visable.setOutlineColor(sf::Color::Green);*/
 
 
 
@@ -479,7 +483,8 @@ int main()
             worldViable.draw(TerNov);
             //worldViable.draw(ena_crtica_visable);
             worldViable.draw(agregateEdge);
-            worldViable.draw(krog_visable);
+            //worldViable.draw(krog_visable);
+            worldViable.draw(agregateCircle);
             worldViable.draw(ersteTrakc);
             worldViable.draw(zweiteTrakc);
             worldViable.draw(incompleteFan);
