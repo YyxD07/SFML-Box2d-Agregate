@@ -156,26 +156,21 @@ int main()
     b2BodyDef krog_def;
     krog_def.position.Set(0.0f, -100.0f);
     B2ToSf::SFB2Body agregateCircle(world.CreateBody(&krog_def));
-    //b2Body* krog = world.CreateBody(&krog_def);
+
 
     b2CircleShape krog_shape;
     krog_shape.m_radius = 30;
     B2ToSf::SfFixtureGraphical agregateCircleGraphical(-30,0,90,sf::Color::White,sf::Color::Green);
     agregateCircle.addFixture(&krog_shape,0,agregateCircleGraphical);
     agregateCircle.reacquaintSfB2Fixts();
-    //krog->CreateFixture(&krog_shape,0.0f);
-
-        /*B2ToSf::EdgyFan krog_visable = Transl8::circle(krog_shape,30);
-        krog_visable.setPosition(Transl8::vec2(krog->GetPosition()));
-        krog_visable.setOutlineThickness(-30);
-        krog_visable.setOutlineColor(sf::Color::Green);*/
-
 
 
     /** terra nova, more pointy this time... */
     b2BodyDef terraNovaDef;
     terraNovaDef.position.Set(0.0f, -50.0f);
-    b2Body* terraNova = world.CreateBody(&terraNovaDef);
+    B2ToSf::SFB2Body agregateTerraNova(world.CreateBody(&terraNovaDef));
+    //b2Body* terraNova = world.CreateBody(&terraNovaDef);
+
     b2PolygonShape terraNovaShape;
     b2Vec2 terraNovaVertices[4];
     terraNovaVertices[0] = b2Vec2(-20,30);
@@ -184,15 +179,9 @@ int main()
     terraNovaVertices[3] = b2Vec2(100,-5);
     terraNovaShape.Set(terraNovaVertices, 4);
 
-    terraNova->CreateFixture(&terraNovaShape,0.0f);
-
-        B2ToSf::EdgyFan TerNov = Transl8::convexPolygon(terraNovaShape);
-        TerNov.setPosition(Transl8::vec2(terraNova->GetPosition()));
-        TerNov.setFillColor(sf::Color::Black);
-        TerNov.setOutlineColor(sf::Color::Blue);
-        TerNov.setOutlineThickness(-5);
-
-
+    B2ToSf::SfFixtureGraphical agregateTerraNovaGraphical(-5,0,0,sf::Color::Black,sf::Color::Blue);
+    agregateTerraNova.addFixture(&terraNovaShape,0,agregateTerraNovaGraphical);
+    agregateTerraNova.reacquaintSfB2Fixts();
 
 
     /** Player block **/
@@ -480,7 +469,8 @@ int main()
             worldViable.setView(observer);
             worldViable.draw(groundBodyVisable);
 
-            worldViable.draw(TerNov);
+            //worldViable.draw(TerNov);
+            worldViable.draw(agregateTerraNova);
             //worldViable.draw(ena_crtica_visable);
             worldViable.draw(agregateEdge);
             //worldViable.draw(krog_visable);
