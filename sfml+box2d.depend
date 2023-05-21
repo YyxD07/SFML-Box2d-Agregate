@@ -1,0 +1,2845 @@
+# depslib dependency file v1.0
+1664005028 source:/home/lister/Desktop/sfml+box2d/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constants.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1663504380 /home/lister/Desktop/sfml+box2d/constants.h
+
+1664004373 source:/home/lister/Desktop/sfml+box2d/src/b2SFML.cpp
+	"b2SFML.h"
+
+1664004373 /home/lister/Desktop/sfml+box2d/include/b2SFML.h
+
+1664613640 source:/home/lister/Desktop/sfml+box2d - 1/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 1/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1663504380 /home/lister/Desktop/sfml+box2d - 1/constants.h
+
+1664099086 /home/lister/Desktop/sfml+box2d - 1/include/translate.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+
+1664096239 source:/home/lister/Desktop/sfml+box2d - 1/include/translate.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+
+1664098686 source:/home/lister/Desktop/sfml+box2d - 1/src/translate.cpp
+	"translate.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 1/constant settings.h
+
+1664623982 source:/home/lister/Desktop/sfml+box2d - 1/src/transl8.cpp
+	"transl8.h"
+
+1664623953 /home/lister/Desktop/sfml+box2d - 1/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+
+1664705384 source:/home/lister/Desktop/sfml+box2d - 2/src/transl8.cpp
+	"transl8.h"
+
+1664703263 /home/lister/Desktop/sfml+box2d - 2/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 2/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 2/constant settings.h
+
+1667296562 source:/home/lister/Desktop/sfml+box2d - 2/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1665317719 source:/home/lister/Desktop/sfml+box2d - 2/src/EdgyStrype.cpp
+	"EdgyStrype.h"
+
+1665326811 /home/lister/Desktop/sfml+box2d - 2/include/EdgyStrype.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+
+1666521824 source:/home/lister/Desktop/sfml+box2d - 2/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1670767843 /home/lister/Desktop/sfml+box2d - 2/include/EdgyStripe.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"clockwiseNormal.h"
+	<vector>
+
+1667302003 source:/home/lister/Desktop/sfml+box2d - 2/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1670694798 /home/lister/Desktop/sfml+box2d - 2/include/clockwiseNormal.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"cmath"
+
+1667302003 source:/home/lister/Desktop/sfml+box2d - 2/clockwiseNormalTest.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1671963201 source:/home/lister/Desktop/sfml+box2d - 3/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1671894209 /home/lister/Desktop/sfml+box2d - 3/include/clockwiseNormal.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"cmath"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 3/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1664705384 source:/home/lister/Desktop/sfml+box2d - 3/src/transl8.cpp
+	"transl8.h"
+
+1664703263 /home/lister/Desktop/sfml+box2d - 3/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 3/constant settings.h
+
+1671273249 source:/home/lister/Desktop/sfml+box2d - 3/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1671287745 /home/lister/Desktop/sfml+box2d - 3/include/EdgyStripe.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"clockwiseNormal.h"
+	<vector>
+
+1671886608 source:/home/lister/Desktop/sfml+box2d - 3/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1671966957 source:/home/lister/Desktop/sfml+box2d - 3/clockwiseNormalTest.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1671963201 source:/home/lister/Desktop/sfml+box2d - 4/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1671894209 /home/lister/Desktop/sfml+box2d - 4/include/clockwiseNormal.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"cmath"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 4/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1664705384 source:/home/lister/Desktop/sfml+box2d - 4/src/transl8.cpp
+	"transl8.h"
+
+1664703263 /home/lister/Desktop/sfml+box2d - 4/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 4/constant settings.h
+
+1671974188 source:/home/lister/Desktop/sfml+box2d - 4/clockwiseNormalTest.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1672071080 /home/lister/Desktop/sfml+box2d - 4/include/EdgyStripe.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1672078980 source:/home/lister/Desktop/sfml+box2d - 4/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1672078584 source:/home/lister/Desktop/sfml+box2d - 4/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1672431592 source:/home/lister/Desktop/sfml+box2d - 5/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 5/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 5/constant settings.h
+
+1672416063 /home/lister/Desktop/sfml+box2d - 5/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"EdgyStripe.h"
+
+1672141092 /home/lister/Desktop/sfml+box2d - 5/include/EdgyStripe.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1671894209 /home/lister/Desktop/sfml+box2d - 5/include/clockwiseNormal.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"cmath"
+
+1671963201 source:/home/lister/Desktop/sfml+box2d - 5/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1672426088 source:/home/lister/Desktop/sfml+box2d - 5/src/transl8.cpp
+	"transl8.h"
+
+1672142687 source:/home/lister/Desktop/sfml+box2d - 5/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1671963201 source:/home/lister/Desktop/sfml+box2d - 6/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1671894209 /home/lister/Desktop/sfml+box2d - 6/include/clockwiseNormal.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"cmath"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1672426088 source:/home/lister/Desktop/sfml+box2d - 6/src/transl8.cpp
+	"transl8.h"
+
+1672416063 /home/lister/Desktop/sfml+box2d - 6/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"EdgyStripe.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 6/constant settings.h
+
+1672480991 /home/lister/Desktop/sfml+box2d - 6/include/EdgyStripe.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1672481033 source:/home/lister/Desktop/sfml+box2d - 6/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1672481342 source:/home/lister/Desktop/sfml+box2d - 6/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1673874715 source:/home/lister/Desktop/sfml+box2d - 6 (copy)/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"constant settings.h"
+	"transl8.h"
+	"EdgyStripe.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 6 (copy)/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 6 (copy)/constant settings.h
+
+1672416063 /home/lister/Desktop/sfml+box2d - 6 (copy)/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"EdgyStripe.h"
+
+1672480991 /home/lister/Desktop/sfml+box2d - 6 (copy)/include/EdgyStripe.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"../constant settings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1671894209 /home/lister/Desktop/sfml+box2d - 6 (copy)/include/clockwiseNormal.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"cmath"
+
+1671963201 source:/home/lister/Desktop/sfml+box2d - 6 (copy)/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1672512372 source:/home/lister/Desktop/sfml+box2d - 6 (copy)/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1672917527 source:/home/lister/Desktop/sfml+box2d - 6 (copy)/src/transl8.cpp
+	"transl8.h"
+
+1675848984 source:/home/lister/Desktop/sfml+box2d - 7/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"ConstantSettings.h"
+	"Transl8.h"
+	"EdgyStripe.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 7/constant settings.h
+
+1675605428 /home/lister/Desktop/sfml+box2d - 7/include/transl8.h
+	<Graphics.hpp>
+	"../box2d-main/include/box2d/box2d.h"
+	"ConstantSettings.h"
+	"EdgyStripe.h"
+
+1675617571 /home/lister/Desktop/sfml+box2d - 7/include/EdgyStripe.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1675848719 /home/lister/Desktop/sfml+box2d - 7/include/clockwiseNormal.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	<cmath>
+
+1675615740 source:/home/lister/Desktop/sfml+box2d - 7/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1675617781 source:/home/lister/Desktop/sfml+box2d - 7/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1675848984 source:/home/lister/Desktop/sfml+box2d - 7/src/transl8.cpp
+	"Transl8.h"
+
+1664111422 /home/lister/Desktop/sfml+box2d - 7/include/constant settings.h
+
+1675848684 /home/lister/Desktop/sfml+box2d - 7/include/ConstantSettings.h
+
+1675848984 /home/lister/Desktop/sfml+box2d - 7/include/Transl8.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	"ConstantSettings.h"
+	"EdgyStripe.h"
+
+1675848984 source:/home/lister/Desktop/sfml+box2d - 7 (copy)/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d-main/include/box2d/box2d.h"
+	"ConstantSettings.h"
+	"Transl8.h"
+	"EdgyStripe.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - 7 (copy)/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1675848684 /home/lister/Desktop/sfml+box2d - 7 (copy)/include/ConstantSettings.h
+
+1675848984 /home/lister/Desktop/sfml+box2d - 7 (copy)/include/Transl8.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	"ConstantSettings.h"
+	"EdgyStripe.h"
+
+1675617571 /home/lister/Desktop/sfml+box2d - 7 (copy)/include/EdgyStripe.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1675848719 /home/lister/Desktop/sfml+box2d - 7 (copy)/include/clockwiseNormal.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	<cmath>
+
+1675615740 source:/home/lister/Desktop/sfml+box2d - 7 (copy)/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1675617781 source:/home/lister/Desktop/sfml+box2d - 7 (copy)/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1675848984 source:/home/lister/Desktop/sfml+box2d - 7 (copy)/src/transl8.cpp
+	"Transl8.h"
+
+1683974332 source:/home/lister/Desktop/sfml+box2d - main/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d.h"
+	"ConstantSettings.h"
+	"Transl8.h"
+	"EdgyStripe.h"
+	"EdgyFan.h"
+	"SFB2Body.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/sfml+box2d - main/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1675848684 /home/lister/Desktop/sfml+box2d - main/include/ConstantSettings.h
+
+1682790365 /home/lister/Desktop/sfml+box2d - main/include/Transl8.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	<cmath>
+	<memory>
+	"ConstantSettings.h"
+	"EdgyStripe.h"
+	"EdgyFan.h"
+
+1681575222 /home/lister/Desktop/sfml+box2d - main/include/EdgyStripe.h
+	"Graphics.hpp"
+	"box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	"SFShapeBase.h"
+
+1681050466 /home/lister/Desktop/sfml+box2d - main/include/clockwiseNormal.h
+	"Graphics.hpp"
+	"box2d.h"
+	<cmath>
+
+1675615740 source:/home/lister/Desktop/sfml+box2d - main/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1681575222 source:/home/lister/Desktop/sfml+box2d - main/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1682790365 source:/home/lister/Desktop/sfml+box2d - main/src/transl8.cpp
+	"Transl8.h"
+
+1681575222 source:/home/lister/Desktop/sfml+box2d - main/src/SfmlB2d.cpp
+	"SfmlB2d.h"
+
+1681575222 /home/lister/Desktop/sfml+box2d - main/include/SfmlB2d.h
+	"box2d.h"
+
+1681575222 source:/home/lister/Desktop/sfml+box2d - main/src/SFShapeBase.cpp
+	"SFShapeBase.h"
+
+1683741127 /home/lister/Desktop/sfml+box2d - main/include/SFShapeBase.h
+	"Graphics.hpp"
+	"box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1682607402 source:/home/lister/Desktop/sfml+box2d - main/src/EdgyFan.cpp
+	"EdgyFan.h"
+
+1681575222 /home/lister/Desktop/sfml+box2d - main/include/EdgyFan.h
+	"Graphics.hpp"
+	"box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	"SFShapeBase.h"
+
+1682607384 source:/home/lister/Desktop/sfml+box2d - main/src/SFFixtureGraphical.cpp
+	"SFFixtureGraphical.h"
+
+1682607349 /home/lister/Desktop/sfml+box2d - main/include/SFFixtureGraphical.h
+	"Graphics.hpp"
+
+1683974280 source:/home/lister/Desktop/sfml+box2d - main/src/SFB2Body.cpp
+	"SFB2Body.h"
+
+1683973423 /home/lister/Desktop/sfml+box2d - main/include/SFB2Body.h
+	<memory>
+	<vector>
+	"box2d.h"
+	"SFShapeBase.h"
+	"EdgyFan.h"
+	"EdgyStripe.h"
+	"SfFixtureGraphical.h"
+	"Transl8.h"
+
+1683971252 /home/lister/Desktop/sfml+box2d - main/include/SfFixtureGraphical.h
+	"Graphics.hpp"
+
+1683971283 source:/home/lister/Desktop/sfml+box2d - main/src/SfFixtureGraphical.cpp
+	"SfFixtureGraphical.h"
+
+1684064051 source:/home/lister/Desktop/SFML-Box2D-thing/src/SfFixtureGraphical.cpp
+	"SfFixtureGraphical.h"
+
+1684064051 /home/lister/Desktop/SFML-Box2D-thing/include/SfFixtureGraphical.h
+	"Graphics.hpp"
+
+1684595953 source:/home/lister/Desktop/SFML-Box2D-thing/main.cpp
+	<iostream>
+	<SFML/Window.hpp>
+	<Graphics.hpp>
+	"box2d.h"
+	"ConstantSettings.h"
+	"Transl8.h"
+	"EdgyStripe.h"
+	"EdgyFan.h"
+	"SFB2Body.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/box2d.h
+	"b2_settings.h"
+	"b2_draw.h"
+	"b2_timer.h"
+	"b2_chain_shape.h"
+	"b2_circle_shape.h"
+	"b2_edge_shape.h"
+	"b2_polygon_shape.h"
+	"b2_broad_phase.h"
+	"b2_dynamic_tree.h"
+	"b2_body.h"
+	"b2_contact.h"
+	"b2_fixture.h"
+	"b2_time_step.h"
+	"b2_world.h"
+	"b2_world_callbacks.h"
+	"b2_distance_joint.h"
+	"b2_friction_joint.h"
+	"b2_gear_joint.h"
+	"b2_motor_joint.h"
+	"b2_mouse_joint.h"
+	"b2_prismatic_joint.h"
+	"b2_pulley_joint.h"
+	"b2_revolute_joint.h"
+	"b2_weld_joint.h"
+	"b2_wheel_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_settings.h
+	"b2_types.h"
+	"b2_api.h"
+	"b2_user_settings.h"
+	<stdarg.h>
+	<stdint.h>
+	"b2_common.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_types.h
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_api.h
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_common.h
+	"b2_settings.h"
+	<stddef.h>
+	<assert.h>
+	<float.h>
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_draw.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_math.h
+	<math.h>
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_timer.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_chain_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_shape.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_collision.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_collision.h
+	<limits.h>
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_circle_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_edge_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_polygon_shape.h
+	"b2_api.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_broad_phase.h
+	"b2_api.h"
+	"b2_settings.h"
+	"b2_collision.h"
+	"b2_dynamic_tree.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_dynamic_tree.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_growable_stack.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_growable_stack.h
+	<string.h>
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_body.h
+	"b2_api.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_contact.h
+	"b2_api.h"
+	"b2_collision.h"
+	"b2_fixture.h"
+	"b2_math.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_fixture.h
+	"b2_api.h"
+	"b2_body.h"
+	"b2_collision.h"
+	"b2_shape.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_time_step.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_world.h
+	"b2_api.h"
+	"b2_block_allocator.h"
+	"b2_contact_manager.h"
+	"b2_math.h"
+	"b2_stack_allocator.h"
+	"b2_time_step.h"
+	"b2_world_callbacks.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_block_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_contact_manager.h
+	"b2_api.h"
+	"b2_broad_phase.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_stack_allocator.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_world_callbacks.h
+	"b2_api.h"
+	"b2_settings.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_distance_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_joint.h
+	"b2_api.h"
+	"b2_math.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_friction_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_gear_joint.h
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_motor_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_mouse_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_prismatic_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_pulley_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_revolute_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_weld_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/b2_wheel_joint.h
+	"b2_api.h"
+	"b2_joint.h"
+
+1684064051 /home/lister/Desktop/SFML-Box2D-thing/include/ConstantSettings.h
+
+1684658699 /home/lister/Desktop/SFML-Box2D-thing/include/Transl8.h
+	"Graphics.hpp"
+	"../box2d-main/include/box2d/box2d.h"
+	<cmath>
+	<memory>
+	"ConstantSettings.h"
+	"EdgyStripe.h"
+	"EdgyFan.h"
+
+1684600660 /home/lister/Desktop/SFML-Box2D-thing/include/EdgyStripe.h
+	"Graphics.hpp"
+	"box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	"SFShapeBase.h"
+
+1684064051 /home/lister/Desktop/SFML-Box2D-thing/include/clockwiseNormal.h
+	"Graphics.hpp"
+	"box2d.h"
+	<cmath>
+
+1684593915 /home/lister/Desktop/SFML-Box2D-thing/include/SFShapeBase.h
+	"Graphics.hpp"
+	"box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	<vector>
+	<iostream>
+
+1684600538 /home/lister/Desktop/SFML-Box2D-thing/include/EdgyFan.h
+	"Graphics.hpp"
+	"box2d.h"
+	"ConstantSettings.h"
+	"clockwiseNormal.h"
+	"SFShapeBase.h"
+
+1684064051 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2Body.h
+	<memory>
+	<vector>
+	"box2d.h"
+	"SFShapeBase.h"
+	"EdgyFan.h"
+	"EdgyStripe.h"
+	"SfFixtureGraphical.h"
+	"Transl8.h"
+
+1684064051 source:/home/lister/Desktop/SFML-Box2D-thing/src/clockwiseNormal.cpp
+	"clockwiseNormal.h"
+
+1684600994 source:/home/lister/Desktop/SFML-Box2D-thing/src/EdgyFan.cpp
+	"EdgyFan.h"
+
+1684600994 source:/home/lister/Desktop/SFML-Box2D-thing/src/EdgyStripe.cpp
+	"EdgyStripe.h"
+
+1684660807 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFB2Body.cpp
+	"SFB2Body.h"
+
+1684600994 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFShapeBase.cpp
+	"SFShapeBase.h"
+
+1684658699 source:/home/lister/Desktop/SFML-Box2D-thing/src/transl8.cpp
+	"Transl8.h"
+
