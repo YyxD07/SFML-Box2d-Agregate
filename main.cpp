@@ -120,27 +120,14 @@ int main()
 
     b2BodyDef chain_loop_BodyDef;
     chain_loop_BodyDef.position.Set(-80.0f, 0.0f);
-    b2Body* chain_loop_body = world.CreateBody(&chain_loop_BodyDef);
+    B2ToSf::SFB2Body agregateLoopedChain(world.CreateBody(&chain_loop_BodyDef));
+    //b2Body* chain_loop_body = world.CreateBody(&chain_loop_BodyDef);
 
     b2ChainShape chain_loop;
     chain_loop.CreateLoop(chain_vertices,5);
-    chain_loop_body->CreateFixture(&chain_loop,1.0f);
-
-
-        B2ToSf::EdgyStripe chain_loop_visable = Transl8::chainShape(chain_loop, 8);
-        chain_loop_visable.setPosition(Transl8::vec2(chain_loop_BodyDef.position));
-        chain_loop_visable.setOutlineThickness(7);
-        chain_loop_visable.setOutlineColor(sf::Color::Green);
-
-    std::cout << "\n \n" << "chain loop prev: " << chain_loop.m_prevVertex.x << " " << chain_loop.m_prevVertex.y << "\n";
-    std::cout << "chain loop vertices:\n" << chain_loop.m_vertices[0].x << " " << chain_loop.m_vertices[0].y << "\n";
-    std::cout << chain_loop.m_vertices[1].x << " " << chain_loop.m_vertices[1].y << "\n";
-    std::cout << chain_loop.m_vertices[2].x << " " << chain_loop.m_vertices[2].y << "\n";
-    std::cout << chain_loop.m_vertices[3].x << " " << chain_loop.m_vertices[3].y << "\n";
-    std::cout << chain_loop.m_vertices[4].x << " " << chain_loop.m_vertices[4].y << "\n";
-    std::cout << "chain loop next: " << chain_loop.m_nextVertex.x << " " << chain_loop.m_nextVertex.y;
-    std::cout << "\n";
-
+    B2ToSf::SfFixtureGraphical chainLoopAgregateGraphical(7,8,30,sf::Color::White,sf::Color::Green);
+    agregateLoopedChain.addFixture(&chain_loop,0,chainLoopAgregateGraphical);
+    agregateLoopedChain.reacquaintSfB2Fixts();
 
 
 
@@ -148,17 +135,21 @@ int main()
     /***Edge testing***/
     b2BodyDef ena_crtica_def;
     ena_crtica_def.position.Set(0.0f,-100.0f);
-    b2Body* ena_crtica = world.CreateBody(&ena_crtica_def);
+    B2ToSf::SFB2Body agregateEdge(world.CreateBody(&ena_crtica_def));
+    //b2Body* ena_crtica = world.CreateBody(&ena_crtica_def);
 
     b2EdgeShape ena_crtica_shape;
 
     //ena_crtica_shape.SetTwoSided(b2Vec2(10,-25),b2Vec2(-100,-30));
     ena_crtica_shape.SetOneSided(b2Vec2(14,-25),b2Vec2(10,-25),b2Vec2(-100,-30),b2Vec2(-104,-30));
-    ena_crtica->CreateFixture(&ena_crtica_shape,0.0f);
-        B2ToSf::EdgyFan ena_crtica_visable = Transl8::line(ena_crtica_shape);
+    B2ToSf::SfFixtureGraphical agregateEdgeGraphical(3,1,0,sf::Color::White,sf::Color::Blue);
+    agregateEdge.addFixture(&ena_crtica_shape,0,agregateEdgeGraphical);
+    agregateEdge.reacquaintSfB2Fixts();
+    //ena_crtica->CreateFixture(&ena_crtica_shape,0.0f);
+        /*B2ToSf::EdgyFan ena_crtica_visable = Transl8::line(ena_crtica_shape);
         ena_crtica_visable.setPosition(Transl8::vec2(ena_crtica->GetPosition()));
         ena_crtica_visable.setOutlineThickness(3);
-        ena_crtica_visable.setOutlineColor(sf::Color::Blue);
+        ena_crtica_visable.setOutlineColor(sf::Color::Blue);*/
 
 
     /***Circle testing***/
@@ -177,7 +168,7 @@ int main()
 
 
 
-    // terra nova, more pointy this time...
+    /** terra nova, more pointy this time... */
     b2BodyDef terraNovaDef;
     terraNovaDef.position.Set(0.0f, -50.0f);
     b2Body* terraNova = world.CreateBody(&terraNovaDef);
@@ -308,10 +299,6 @@ int main()
 
 
 
-    /***Red dot***/
-    sf::Vertex vertex;
-    vertex.position = sf::Vector2f(0.f,0.f*UniversalConstants::kScaling);
-    vertex.color = sf::Color::Red;
 
 
     /***Triangle stripe1***/
@@ -339,7 +326,7 @@ int main()
     zweiteTrakcEdges[5] = sf::Vector2f(20*UniversalConstants::kScaling,20*UniversalConstants::kScaling);
     zweiteTrakcEdges[6] = sf::Vector2f(30*UniversalConstants::kScaling,10*UniversalConstants::kScaling);
 
-    //zweiteTrakcEdges[0].color = sf::Color::Red;
+
 
     zweiteTrakc.setPoints(zweiteTrakcEdges);
 
@@ -490,16 +477,15 @@ int main()
             worldViable.draw(groundBodyVisable);
 
             worldViable.draw(TerNov);
-            worldViable.draw(ena_crtica_visable);
+            //worldViable.draw(ena_crtica_visable);
+            worldViable.draw(agregateEdge);
             worldViable.draw(krog_visable);
-            //worldViable.draw(&vertex,1,sf::Points);
             worldViable.draw(ersteTrakc);
             worldViable.draw(zweiteTrakc);
             worldViable.draw(incompleteFan);
             worldViable.draw(completeFan);
-            //worldViable.draw(chain_visable);
             worldViable.draw(agregateChain);
-            worldViable.draw(chain_loop_visable);
+            worldViable.draw(agregateLoopedChain);
             worldViable.draw(dynamicBodyVisable);
             worldViable.draw(ball_and_chain_visable);
             worldViable.draw(sensor_visable);
