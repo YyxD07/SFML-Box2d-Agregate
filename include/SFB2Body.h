@@ -38,7 +38,7 @@ class SFB2Body: public sf::Drawable
         void reacquaintSfB2Fixts();
 
 
-        b2Body& getBody();
+        b2Body* getBody();
         std::vector<fixt_pair>& getFixtVec();
 
 

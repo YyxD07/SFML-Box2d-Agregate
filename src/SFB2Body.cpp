@@ -100,9 +100,9 @@ void B2ToSf::SFB2Body::reacquaintSfB2Fixts()
 
 
 
-b2Body& B2ToSf::SFB2Body::getBody()
+b2Body* B2ToSf::SFB2Body::getBody()
 {
-    return *m_body;
+    return m_body;
 }
 
 std::vector<B2ToSf::SFB2Body::fixt_pair>& B2ToSf::SFB2Body::getFixtVec()
