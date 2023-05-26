@@ -201,16 +201,12 @@ int main()
     //fixtureDef.filter.groupIndex = -8;
 
     B2ToSf::SFB2Body agregatePlayer(world.CreateBody(&bodyDef));
-    agregatePlayer.addFixture(&fixtureDef, agregateTerraNovaGraphical);
-    //b2Body* body = world.CreateBody(&bodyDef);
-    //body->CreateFixture(&fixtureDef); // binds fixture to body
-    //body->SetFixedRotation(true);
-
-        //sf representation
-        //B2ToSf::EdgyFan dynamicBodyVisable = Transl8::convexPolygon(dynamicBox);
+    B2ToSf::SfFixtureGraphical agregatePlayerGraphical(0,0,0,sf::Color::White,sf::Color::Blue);
+    agregatePlayer.addFixture(&fixtureDef, agregatePlayerGraphical);
 
 
-    //Ball and chain
+
+    /**Ball and chain*/
 
     b2BodyDef ballandchain_def;
     ballandchain_def.type = b2_dynamicBody;
@@ -226,15 +222,18 @@ int main()
     ballandchain_fixture.restitution  = 0.0f;
     ballandchain_fixture.isSensor = false;
     ballandchain_fixture.userData.pointer = reinterpret_cast<uintptr_t>(&ballandchain_def);
-
-    b2Body* ballandchain = world.CreateBody(&ballandchain_def);
-    ballandchain->CreateFixture(&ballandchain_fixture);
+    B2ToSf::SFB2Body agregateBallAndChain(world.CreateBody(&ballandchain_def));
+    B2ToSf::SfFixtureGraphical agregateBallAndChainGraphical(1,0,30,sf::Color::White,sf::Color::Red);
+    agregateBallAndChain.addFixture(&ballandchain_fixture,agregateBallAndChainGraphical);
+    //b2Body* ballandchain = world.CreateBody(&ballandchain_def);
+    //ballandchain->CreateFixture(&ballandchain_fixture);
 
         //sf ball and chain
-        B2ToSf::EdgyFan ball_and_chain_visable = Transl8::circle(ballandchain_circle);
+        //B2ToSf::EdgyFan ball_and_chain_visable = Transl8::circle(ballandchain_circle);
 
     b2DistanceJointDef chainofball_def;
-    chainofball_def.Initialize(agregatePlayer.getBody(),ballandchain,agregatePlayer.getBody()->GetWorldCenter(),ballandchain->GetWorldCenter());
+    chainofball_def.Initialize(agregatePlayer.getBody(),agregateBallAndChain.getBody(),
+                               agregatePlayer.getBody()->GetWorldCenter(),agregateBallAndChain.getBody()->GetWorldCenter());
     chainofball_def.collideConnected = true;
     b2RevoluteJoint* chainofball = (b2RevoluteJoint*)world.CreateJoint(&chainofball_def);
 
@@ -255,6 +254,7 @@ int main()
     sensor_fixture_def.isSensor = true;
     //sensor_fixture_def.filter.groupIndex = -8;
 
+    //B2ToSf::SFB2Body agregateSensor
     b2Body* sensor = world.CreateBody(&sensor_def);
     sensor->CreateFixture(&sensor_fixture_def);
     sensor->SetFixedRotation(true);
@@ -270,25 +270,6 @@ int main()
     b2WeldJoint* sensor_joint = (b2WeldJoint*)world.CreateJoint(&sensor_joint_def);
 
 
-    /*b2BodyDef sensor_def;
-    sensor_def.type = b2_dynamicBody; // ne vem če je tole smiselno??
-    sensor_def.position.Set(0.0f, 5.0f);
-
-    b2PolygonShape sensor_box;
-    sensor_box.SetAsBox(1.0f, 0.1f);
-
-    b2FixtureDef sensor_fixture_def;
-    sensor_fixture_def.shape = &sensor_box;
-    fixtureDef.density = 1.0f;
-    sensor_fixture_def.isSensor = false;
-
-    b2Body* sensor = world.CreateBody(& sensor_def);
-    sensor->CreateFixture(&sensor_fixture_def);
-    body->SetFixedRotation(false);
-
-    b2WeldJointDef sensor_joint_def;
-    sensor_joint_def.Initialize(sensor,body,sensor->GetWorldCenter());
-    b2WeldJoint* joint = (b2WeldJoint*)world.CreateJoint(&sensor_joint_def);*/
 
 
 
@@ -461,7 +442,8 @@ int main()
             //dynamicBodyVisable.setPosition(Transl8::vec2(position));
             //dynamicBodyVisable.setRotation(angle);
 
-            ball_and_chain_visable.setPosition(Transl8::vec2(ballandchain->GetPosition()));
+            //ball_and_chain_visable.setPosition(Transl8::vec2(ballandchain->GetPosition()));
+            agregateBallAndChain.reacquaintSfB2Fixts();
 
             sensor_visable.setPosition(Transl8::vec2(sensor->GetPosition()));
 
@@ -486,7 +468,8 @@ int main()
             worldViable.draw(agregateLoopedChain);
             //worldViable.draw(dynamicBodyVisable);
             worldViable.draw(agregatePlayer);
-            worldViable.draw(ball_and_chain_visable);
+            //worldViable.draw(ball_and_chain_visable);
+            worldViable.draw(agregateBallAndChain);
             worldViable.draw(sensor_visable);
             worldViable.draw(agregateBall);
             worldViable.display();
