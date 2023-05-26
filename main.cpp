@@ -237,7 +237,7 @@ int main()
     chainofball_def.collideConnected = true;
     b2RevoluteJoint* chainofball = (b2RevoluteJoint*)world.CreateJoint(&chainofball_def);
 
-    //sensor body
+    /**sensor body*/
 
     b2BodyDef sensor_def;
     sensor_def.type = b2_dynamicBody;
@@ -254,18 +254,21 @@ int main()
     sensor_fixture_def.isSensor = true;
     //sensor_fixture_def.filter.groupIndex = -8;
 
-    //B2ToSf::SFB2Body agregateSensor
-    b2Body* sensor = world.CreateBody(&sensor_def);
-    sensor->CreateFixture(&sensor_fixture_def);
-    sensor->SetFixedRotation(true);
+    B2ToSf::SFB2Body agregateSensor(world.CreateBody(&sensor_def));
+    B2ToSf::SfFixtureGraphical agregateSensGraphical(0,0,0,sf::Color::Red);
+    agregateSensor.addFixture(&sensor_fixture_def, agregateSensGraphical);
+    agregateSensor.getBody()->SetFixedRotation(true);
+    //b2Body* sensor = world.CreateBody(&sensor_def);
+    //sensor->CreateFixture(&sensor_fixture_def);
+    //sensor->SetFixedRotation(true);
 
-        B2ToSf::EdgyFan sensor_visable = Transl8::convexPolygon(sensor_box);
-        sensor_visable.setFillColor(sf::Color::Red);
+        //B2ToSf::EdgyFan sensor_visable = Transl8::convexPolygon(sensor_box);
+        //sensor_visable.setFillColor(sf::Color::Red);
 
     b2WeldJointDef sensor_joint_def;
-    sensor_joint_def.Initialize(agregatePlayer.getBody(),sensor,agregatePlayer.getBody()->GetWorldCenter());
+    sensor_joint_def.Initialize(agregatePlayer.getBody(),agregateSensor.getBody(),agregatePlayer.getBody()->GetWorldCenter());
     sensor_joint_def.localAnchorA = agregatePlayer.getBody()->GetLocalCenter() - b2Vec2(0.0f,1.0f);
-    sensor_joint_def.localAnchorB = sensor->GetLocalCenter();
+    sensor_joint_def.localAnchorB = agregateSensor.getBody()->GetLocalCenter();
     sensor_joint_def.collideConnected = false;
     b2WeldJoint* sensor_joint = (b2WeldJoint*)world.CreateJoint(&sensor_joint_def);
 
@@ -408,7 +411,7 @@ int main()
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
             {
 
-                if(sensor->GetContactList() && (sensor->GetContactList())->contact->IsTouching())
+                if(agregateSensor.getBody()->GetContactList() && (agregateSensor.getBody()->GetContactList())->contact->IsTouching())
                 {
                     agregatePlayer.getBody()->SetLinearVelocity(b2Vec2(agregatePlayer.getBody()->GetLinearVelocity().x,30));
                     //body->ApplyLinearImpulseToCenter(b2Vec2(0,10),true);
@@ -445,7 +448,8 @@ int main()
             //ball_and_chain_visable.setPosition(Transl8::vec2(ballandchain->GetPosition()));
             agregateBallAndChain.reacquaintSfB2Fixts();
 
-            sensor_visable.setPosition(Transl8::vec2(sensor->GetPosition()));
+            agregateSensor.reacquaintSfB2Fixts();
+            //sensor_visable.setPosition(Transl8::vec2(sensor->GetPosition()));
 
             agregateBall.reacquaintSfB2Fixts();
 
@@ -470,7 +474,8 @@ int main()
             worldViable.draw(agregatePlayer);
             //worldViable.draw(ball_and_chain_visable);
             worldViable.draw(agregateBallAndChain);
-            worldViable.draw(sensor_visable);
+            //worldViable.draw(sensor_visable);
+            worldViable.draw(agregateSensor);
             worldViable.draw(agregateBall);
             worldViable.display();
             clap.restart();
