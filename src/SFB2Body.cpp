@@ -62,7 +62,7 @@ void B2ToSf::SFB2Body::destroyFixture(const fixt_iter & target_pair)
 
 void B2ToSf::SFB2Body::destroyFixture(const b2Fixture* b2_fixture)
 {
-    for(auto it = m_fixutres.begin(); it != m_fixutres.end();)
+    for(auto it = m_fixutres.begin(); it != m_fixutres.end(); ++it)
     {
         if(it->second == b2_fixture)
         {
@@ -75,7 +75,7 @@ void B2ToSf::SFB2Body::destroyFixture(const b2Fixture* b2_fixture)
 
 void B2ToSf::SFB2Body::destroyFixture(const std::unique_ptr<B2ToSf::SFShapeBase> & sf_fixture)
 {
-    for(auto it = m_fixutres.begin(); it != m_fixutres.end();)
+    for(auto it = m_fixutres.begin(); it != m_fixutres.end(); ++it)
     {
         if(it->first == sf_fixture)
         {

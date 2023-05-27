@@ -59,8 +59,8 @@ int main()
     b2FixtureDef agregateBallFixtDef;
     agregateBallFixtDef.shape = &agregateBallShape;
     agregateBallFixtDef.restitution = 0.1f;
-    agregateBallFixtDef.friction = 0.3;
-    agregateBallFixtDef.density = 2;
+    agregateBallFixtDef.friction = 0.1;
+    agregateBallFixtDef.density = 0.5;
 
     b2FixtureDef* agregateBallFixtDefPtr = &agregateBallFixtDef;
 
@@ -71,13 +71,15 @@ int main()
     b2FixtureDef agregateBoxFixtDef;
     agregateBoxFixtDef.shape = &agregateBoxShape;
     agregateBoxFixtDef.restitution = 0.1;
-    agregateBoxFixtDef.friction = 0.5;
-    agregateBoxFixtDef.density = 3;
+    agregateBoxFixtDef.friction = 0.1;
+    agregateBoxFixtDef.density = 0.5;
 
     b2FixtureDef* agregateBoxFixtDefPtr = &agregateBoxFixtDef;
 
 
     agregateBall.addFixture(agregateBoxFixtDefPtr);
+    //agregateBall.destroyFixture(agregateBall.getFixtVec()[1].second);
+
 
 
 
