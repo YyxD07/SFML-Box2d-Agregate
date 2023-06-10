@@ -28,26 +28,33 @@ int main()
     /**ground box executed with static body*/
     b2BodyDef groundBodyDef;
     groundBodyDef.position.Set(0.0f,-150.0f);
-    b2Body* groundBody = world.CreateBody(&groundBodyDef); //world is the one to create and destroy bodies
+    B2ToSf::SFB2Body agregateGroundBox(world.CreateBody(&groundBodyDef));
+    //b2Body* groundBody = world.CreateBody(&groundBodyDef); //world is the one to create and destroy bodies
 
 
     b2PolygonShape groundBox;
     groundBox.SetAsBox(150.0f,10.0f); //this creates box 100 units wide and 20 units high. 2 times the value of function parameters.
 
-    groundBody->CreateFixture(&groundBox,0.0f);
+    B2ToSf::SfFixtureGraphical agregateGroundBoxGraphical(4,20,30,sf::Color::Red,sf::Color::Green);
+    agregateGroundBox.addFixture(&groundBox,0,agregateGroundBoxGraphical);
+    //groundBody->CreateFixture(&groundBox,0.0f);
 
-    groundBody->SetTransform(groundBody->GetPosition(),0.1);
+    agregateGroundBox.getBody()->SetTransform(agregateGroundBox.getBody()->GetPosition(),0.1);
+    agregateGroundBox.reacquaintSfB2Fixts();
+    //groundBody->SetTransform(groundBody->GetPosition(),0.1);
         //sf reprensetation Origin in top left corner, b2_x = sfml_x, b2y = -sfml_y
 
 
-        B2ToSf::EdgyFan groundBodyVisable = Transl8::convexPolygon(groundBox);
+        /*B2ToSf::EdgyFan groundBodyVisable = Transl8::convexPolygon(groundBox);
         groundBodyVisable.setPosition(Transl8::vec2(groundBody->GetPosition()));
         groundBodyVisable.setRotation(Transl8::getRotation(groundBody));
         groundBodyVisable.setFillColor(sf::Color::Red);
         groundBodyVisable.setOutlineColor(sf::Color::Green);
-        groundBodyVisable.setOutlineThickness(4);
+        groundBodyVisable.setOutlineThickness(4);*/
 
     /**First test of SFML Box2d agregate**/
+
+
     b2BodyDef agregateBallDef;
     agregateBallDef.type = b2_dynamicBody;
     agregateBallDef.position.Set(0.f,0.f);
@@ -78,9 +85,24 @@ int main()
 
 
     agregateBall.addFixture(agregateBoxFixtDefPtr);
-    //agregateBall.destroyFixture(agregateBall.getFixtVec()[1].second);
+
+    B2ToSf::SFB2Body::fixt_rev_iter first_r_iter = agregateBall.getFixtVec().rbegin();
+    B2ToSf::SFB2Body::fixt_rev_iter second_r_iter = first_r_iter + 1;
+
+    //agregateBall.destroyFixture(second_r_iter - 1);
+    //agregateBall.destroyFixture(agregateGroundBox.getFixtVec()[1].second);
 
 
+
+    /**Primitive body generator*/
+    /*?std::size_t no_of_generated = 10;
+    std::vector<B2ToSf::SFB2Body> generated_bodies;
+    generated_bodies.reserve(10);
+
+    for(std::size_t index = 0; index < no_of_generated; ++ index)
+    {
+
+    }*/
 
 
     /*** Chain testing ***/
@@ -456,15 +478,13 @@ int main()
             agregateBall.reacquaintSfB2Fixts();
 
             observer.setCenter(agregatePlayer.getFixtVec()[0].first->getPosition());
-            //observer.setCenter(dynamicBodyVisable.getPosition());
-            worldViable.setView(observer);
-            worldViable.draw(groundBodyVisable);
 
-            //worldViable.draw(TerNov);
+
+            worldViable.setView(observer);
+            worldViable.draw(agregateGroundBox);
+
             worldViable.draw(agregateTerraNova);
-            //worldViable.draw(ena_crtica_visable);
             worldViable.draw(agregateEdge);
-            //worldViable.draw(krog_visable);
             worldViable.draw(agregateCircle);
             worldViable.draw(ersteTrakc);
             worldViable.draw(zweiteTrakc);
@@ -472,13 +492,10 @@ int main()
             worldViable.draw(completeFan);
             worldViable.draw(agregateChain);
             worldViable.draw(agregateLoopedChain);
-            //worldViable.draw(dynamicBodyVisable);
-            worldViable.draw(agregatePlayer);
-            //worldViable.draw(ball_and_chain_visable);
-            worldViable.draw(agregateBallAndChain);
-            //worldViable.draw(sensor_visable);
-            worldViable.draw(agregateSensor);
             worldViable.draw(agregateBall);
+            worldViable.draw(agregatePlayer);
+            worldViable.draw(agregateBallAndChain);
+            worldViable.draw(agregateSensor);
             worldViable.display();
             clap.restart();
         }

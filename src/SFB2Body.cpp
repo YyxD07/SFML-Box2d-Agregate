@@ -3,7 +3,14 @@
 
 B2ToSf::SFB2Body::SFB2Body(b2Body* body): m_body(body){}
 
-B2ToSf::SFB2Body::~SFB2Body(){}
+B2ToSf::SFB2Body::~SFB2Body()
+{
+    for(fixt_rev_iter r_iter = m_fixutres.rbegin(); r_iter != m_fixutres.rend(); ++r_iter)
+    {
+        destroyFixture(r_iter);
+    }
+    m_body->GetWorld()->DestroyBody(m_body);
+}
 
 void B2ToSf::SFB2Body::addFixture(const b2FixtureDef* fixt_def, const SfFixtureGraphical& graphical)
 {
@@ -58,6 +65,11 @@ void B2ToSf::SFB2Body::destroyFixture(const fixt_iter & target_pair)
 {
     m_body->DestroyFixture(target_pair->second);
     m_fixutres.erase(target_pair);
+}
+
+void B2ToSf::SFB2Body::destroyFixture(const fixt_rev_iter & target_pair)
+{
+    destroyFixture(target_pair.base() - 1);
 }
 
 void B2ToSf::SFB2Body::destroyFixture(const b2Fixture* b2_fixture)

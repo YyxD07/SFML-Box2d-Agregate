@@ -21,7 +21,9 @@ class SFB2Body: public sf::Drawable
     public:
 
         using fixt_pair = std::pair<std::unique_ptr<B2ToSf::SFShapeBase>, b2Fixture*>;
-        using fixt_iter = std::vector<fixt_pair>::iterator;
+        using fixt_pair_vector = std::vector<fixt_pair>;
+        using fixt_iter = fixt_pair_vector::iterator;
+        using fixt_rev_iter = fixt_pair_vector::reverse_iterator;
 
         SFB2Body(b2Body* body);
         virtual ~SFB2Body();
@@ -32,6 +34,7 @@ class SFB2Body: public sf::Drawable
                         const SfFixtureGraphical& graphical = SfFixtureGraphical());
 
         void destroyFixture(const fixt_iter & target_pair);
+        void destroyFixture(const fixt_rev_iter & target_pair);
         void destroyFixture(const b2Fixture* b2_fixture);
         void destroyFixture(const std::unique_ptr<B2ToSf::SFShapeBase> & sf_fixture);
 
@@ -39,9 +42,7 @@ class SFB2Body: public sf::Drawable
 
 
         b2Body* getBody();
-        std::vector<fixt_pair>& getFixtVec();
-
-
+        fixt_pair_vector& getFixtVec();
 
 
 
@@ -49,7 +50,7 @@ class SFB2Body: public sf::Drawable
     protected:
     b2Body* m_body;
     // Vector of SFML representations of Box2d fixtures that belong to body
-    std::vector<std::pair<std::unique_ptr<B2ToSf::SFShapeBase>, b2Fixture*>> m_fixutres;
+    fixt_pair_vector m_fixutres;
 
 
 
