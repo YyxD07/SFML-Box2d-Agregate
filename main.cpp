@@ -41,16 +41,6 @@ int main()
 
     agregateGroundBox.getBody()->SetTransform(agregateGroundBox.getBody()->GetPosition(),0.1);
     agregateGroundBox.reacquaintSfB2Fixts();
-    //groundBody->SetTransform(groundBody->GetPosition(),0.1);
-        //sf reprensetation Origin in top left corner, b2_x = sfml_x, b2y = -sfml_y
-
-
-        /*B2ToSf::EdgyFan groundBodyVisable = Transl8::convexPolygon(groundBox);
-        groundBodyVisable.setPosition(Transl8::vec2(groundBody->GetPosition()));
-        groundBodyVisable.setRotation(Transl8::getRotation(groundBody));
-        groundBodyVisable.setFillColor(sf::Color::Red);
-        groundBodyVisable.setOutlineColor(sf::Color::Green);
-        groundBodyVisable.setOutlineThickness(4);*/
 
     /**First test of SFML Box2d agregate**/
 
@@ -83,26 +73,37 @@ int main()
 
     b2FixtureDef* agregateBoxFixtDefPtr = &agregateBoxFixtDef;
 
-
     agregateBall.addFixture(agregateBoxFixtDefPtr);
 
     B2ToSf::SFB2Body::fixt_rev_iter first_r_iter = agregateBall.getFixtVec().rbegin();
     B2ToSf::SFB2Body::fixt_rev_iter second_r_iter = first_r_iter + 1;
-
     //agregateBall.destroyFixture(second_r_iter - 1);
     //agregateBall.destroyFixture(agregateGroundBox.getFixtVec()[1].second);
 
-
-
     /**Primitive body generator*/
-    /*?std::size_t no_of_generated = 10;
-    std::vector<B2ToSf::SFB2Body> generated_bodies;
-    generated_bodies.reserve(10);
+    std::size_t no_of_generated = 100;
+    std::vector<std::unique_ptr<B2ToSf::SFB2Body>> generated_bodies;
+    //generated_bodies.reserve(10);
 
     for(std::size_t index = 0; index < no_of_generated; ++ index)
     {
+        b2BodyDef loc_agregate_def;
+        loc_agregate_def.type = b2_dynamicBody;
+        loc_agregate_def.position.Set(-140 + 3.f * index, index * 10);
 
-    }*/
+        std::unique_ptr<B2ToSf::SFB2Body> temp = std::make_unique<B2ToSf::SFB2Body>(world.CreateBody(&loc_agregate_def));
+        generated_bodies.emplace_back(std::move(temp));
+
+        b2CircleShape tempBallShape;
+        tempBallShape.m_radius = 2;
+        b2FixtureDef tempBallFixtDef;
+        tempBallFixtDef.shape = &tempBallShape;
+        tempBallFixtDef.restitution = 0.7f;
+        tempBallFixtDef.friction = 0.1;
+        tempBallFixtDef.density = 0.5;
+
+        generated_bodies[index]->addFixture(&tempBallFixtDef);
+    }
 
 
     /*** Chain testing ***/
@@ -479,9 +480,20 @@ int main()
 
             observer.setCenter(agregatePlayer.getFixtVec()[0].first->getPosition());
 
+            for(auto & item : generated_bodies)
+            {
+                item->reacquaintSfB2Fixts();
+            }
+
 
             worldViable.setView(observer);
             worldViable.draw(agregateGroundBox);
+
+
+            for(auto & item : generated_bodies)
+            {
+                worldViable.draw(*item);
+            }
 
             worldViable.draw(agregateTerraNova);
             worldViable.draw(agregateEdge);
