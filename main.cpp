@@ -409,6 +409,7 @@ int main()
     worldViable.setView(observer);
 
 
+
     while(worldViable.isOpen())
     {
         sf::Event event;

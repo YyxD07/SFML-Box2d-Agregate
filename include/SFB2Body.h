@@ -28,16 +28,20 @@ class SFB2Body: public sf::Drawable
         SFB2Body(b2Body* body);
         virtual ~SFB2Body();
 
+        //Ads a single fixture to a body:
         void addFixture(const b2FixtureDef* fixt_def,
                         const SfFixtureGraphical& graphical = SfFixtureGraphical());
         void addFixture(const b2Shape* b2_shape, const float densitiy = 1,
                         const SfFixtureGraphical& graphical = SfFixtureGraphical());
 
+        //Destroys single fixture
         void destroyFixture(const fixt_iter & target_pair);
         void destroyFixture(const fixt_rev_iter & target_pair);
         void destroyFixture(const b2Fixture* b2_fixture);
         void destroyFixture(const std::unique_ptr<B2ToSf::SFShapeBase> & sf_fixture);
 
+        //Sets position and rotation of SFML fixture representations in accordance with box2d fixtures:
+        //Should be called before calling sfml draw on the body.
         void reacquaintSfB2Fixts();
 
 

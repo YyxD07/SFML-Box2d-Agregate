@@ -36,9 +36,18 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="box2d-main/include/box2d" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="box2d-main/build/bin/libsajson.a" />
+					<Add library="box2d-main/build/bin/libimgui.a" />
+					<Add library="box2d-main/build/bin/libglfw.a" />
+					<Add library="box2d-main/build/bin/libglad.a" />
+					<Add library="box2d-main/build/bin/libbox2d.a" />
 				</Linker>
 			</Target>
 		</Build>
