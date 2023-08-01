@@ -22,12 +22,14 @@ drawing to screen of whole batches of bodies.**/
 class SFB2Cluster: public sf::Drawable
 {
     public:
-        SFB2Cluster();
+        SFB2Cluster(std::size_t size_of_cluster = 0);
         virtual ~SFB2Cluster();
 
         virtual void draw(sf::RenderTarget&, sf::RenderStates) const; //Used by sf::RenderWinodw to draw object clusters
 
-        void addBody(std::unique_ptr<B2ToSf::SFB2Body> && body); //Moves body created somewhere else to this cluster.
+        /*Moves body created somewhere else to this cluster. Return reference to added body can be used to add fixtures to
+        newly created body.*/
+        B2ToSf::SFB2Body& addBody(std::unique_ptr<B2ToSf::SFB2Body> && body);
 
         /*Destroys body, its fixtures and corresponding box2d entities.*/
         void destroyBody(const std::unique_ptr<B2ToSf::SFB2Body> & doomed_body);

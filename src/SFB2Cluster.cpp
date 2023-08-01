@@ -1,7 +1,10 @@
 #include "SFB2Cluster.h"
 
 
-B2ToSf::SFB2Cluster::SFB2Cluster(){}
+B2ToSf::SFB2Cluster::SFB2Cluster(std::size_t size_of_cluster)
+{
+    m_body_cluster.reserve(size_of_cluster);
+}
 B2ToSf::SFB2Cluster::~SFB2Cluster(){}
 
 
@@ -13,9 +16,10 @@ void B2ToSf::SFB2Cluster::draw(sf::RenderTarget& target, sf::RenderStates states
     }
 }
 
-void B2ToSf::SFB2Cluster::addBody(std::unique_ptr<B2ToSf::SFB2Body> && body)
+B2ToSf::SFB2Body& B2ToSf::SFB2Cluster::addBody(std::unique_ptr<B2ToSf::SFB2Body> && body)
 {
     m_body_cluster.emplace_back(std::move(body));
+    return *(m_body_cluster.back());
 }
 
 void B2ToSf::SFB2Cluster::destroyBody(const std::unique_ptr<B2ToSf::SFB2Body> & doomed_body)

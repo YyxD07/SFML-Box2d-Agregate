@@ -14,6 +14,8 @@
 
 #include "SFB2Body.h"
 
+#include "SFB2Cluster.h"
+
 
 
 int main()
@@ -81,8 +83,10 @@ int main()
     //agregateBall.destroyFixture(agregateGroundBox.getFixtVec()[1].second);
 
     /**Primitive body generator*/
+
+    B2ToSf::SFB2Cluster first_cluster(10);
     std::size_t no_of_generated = 100;
-    std::vector<std::unique_ptr<B2ToSf::SFB2Body>> generated_bodies;
+    //std::vector<std::unique_ptr<B2ToSf::SFB2Body>> generated_bodies;
     //generated_bodies.reserve(10);
 
     for(std::size_t index = 0; index < no_of_generated; ++ index)
@@ -92,7 +96,8 @@ int main()
         loc_agregate_def.position.Set(-140 + 3.f * index, index * 10);
 
         std::unique_ptr<B2ToSf::SFB2Body> temp = std::make_unique<B2ToSf::SFB2Body>(world.CreateBody(&loc_agregate_def));
-        generated_bodies.emplace_back(std::move(temp));
+        //generated_bodies.emplace_back(std::move(temp));
+        B2ToSf::SFB2Body & temp_body = first_cluster.addBody(std::move(temp));
 
         b2CircleShape tempBallShape;
         tempBallShape.m_radius = 2;
@@ -102,7 +107,8 @@ int main()
         tempBallFixtDef.friction = 0.1;
         tempBallFixtDef.density = 0.5;
 
-        generated_bodies[index]->addFixture(&tempBallFixtDef);
+        temp_body.addFixture(&tempBallFixtDef);
+        //generated_bodies[index]->addFixture(&tempBallFixtDef);
     }
 
 
@@ -481,21 +487,16 @@ int main()
 
             observer.setCenter(agregatePlayer.getFixtVec()[0].first->getPosition());
 
-            for(auto & item : generated_bodies)
-            {
-                item->reacquaintSfB2Fixts();
-            }
+
+            first_cluster.reacquaintSFB2Fixts();
 
 
             worldViable.setView(observer);
             worldViable.draw(agregateGroundBox);
 
 
-            for(auto & item : generated_bodies)
-            {
-                worldViable.draw(*item);
-            }
 
+            worldViable.draw(first_cluster);
             worldViable.draw(agregateTerraNova);
             worldViable.draw(agregateEdge);
             worldViable.draw(agregateCircle);
