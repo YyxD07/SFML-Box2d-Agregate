@@ -63,6 +63,7 @@
 		<Unit filename="include/EdgyFan.h" />
 		<Unit filename="include/EdgyStripe.h" />
 		<Unit filename="include/SFB2Body.h" />
+		<Unit filename="include/SFB2Cluster.h" />
 		<Unit filename="include/SFShapeBase.h" />
 		<Unit filename="include/SfFixtureGraphical.h" />
 		<Unit filename="include/Transl8.h" />
@@ -71,6 +72,7 @@
 		<Unit filename="src/EdgyFan.cpp" />
 		<Unit filename="src/EdgyStripe.cpp" />
 		<Unit filename="src/SFB2Body.cpp" />
+		<Unit filename="src/SFB2Cluster.cpp" />
 		<Unit filename="src/SFShapeBase.cpp" />
 		<Unit filename="src/SfFixtureGraphical.cpp" />
 		<Unit filename="src/clockwiseNormal.cpp" />

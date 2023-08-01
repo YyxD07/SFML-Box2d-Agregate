@@ -6,8 +6,8 @@
 
 #include "box2d.h"
 #include "SFShapeBase.h"
-#include "EdgyFan.h"
-#include "EdgyStripe.h"
+//#include "EdgyFan.h"
+//#include "EdgyStripe.h"
 #include "SfFixtureGraphical.h"
 #include "Transl8.h"
 
@@ -16,6 +16,10 @@
 namespace B2ToSf
 {
 
+/**
+This class holds a pointer to b2Body and  a vector of pairs of b2Fixtures and their sfml visual representations.
+
+It also handles creation and destruction of said pairs.**/
 class SFB2Body: public sf::Drawable
 {
     public:
@@ -27,6 +31,8 @@ class SFB2Body: public sf::Drawable
 
         SFB2Body(b2Body* body);
         virtual ~SFB2Body();
+
+        virtual void draw(sf::RenderTarget&, sf::RenderStates) const; //Used by sf::RenderWinodw to draw object
 
         //Ads a single fixture to a body:
         void addFixture(const b2FixtureDef* fixt_def,
@@ -53,14 +59,14 @@ class SFB2Body: public sf::Drawable
 
     protected:
     b2Body* m_body;
-    // Vector of SFML representations of Box2d fixtures that belong to body
+     // Vector of SFML representations of Box2d fixtures that belong to body
     fixt_pair_vector m_fixutres;
 
 
 
 
     private:
-        virtual void draw(sf::RenderTarget&, sf::RenderStates) const; //Used by sf::RenderWinodw to draw object
+
 
 
 

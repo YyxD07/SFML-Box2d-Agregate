@@ -2815,13 +2815,11 @@
 	"clockwiseNormal.h"
 	"SFShapeBase.h"
 
-1687588332 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2Body.h
+1690881508 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2Body.h
 	<memory>
 	<vector>
 	"box2d.h"
 	"SFShapeBase.h"
-	"EdgyFan.h"
-	"EdgyStripe.h"
 	"SfFixtureGraphical.h"
 	"Transl8.h"
 
@@ -2842,4 +2840,14 @@
 
 1684658699 source:/home/lister/Desktop/SFML-Box2D-thing/src/transl8.cpp
 	"Transl8.h"
+
+1690891219 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFB2Cluster.cpp
+	"SFB2Cluster.h"
+
+1690891444 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2Cluster.h
+	<memory>
+	<vector>
+	"Graphics.hpp"
+	"box2d.h"
+	"SFB2Body.h"
 
