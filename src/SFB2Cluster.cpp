@@ -29,7 +29,7 @@ void B2ToSf::SFB2Cluster::destroyBody(const std::unique_ptr<B2ToSf::SFB2Body> & 
         if(*it == doomed_body)
         {
             //First destroy box2d body and only then destroy SFB2Body!
-            (*it)->getBody()->GetWorld()->DestroyBody((*it)->getBody());
+            //(*it)->getBody()->GetWorld()->DestroyBody((*it)->getBody());
             m_body_cluster.erase(it);
             break; // no need to deal with any other elements of the cluster
         }

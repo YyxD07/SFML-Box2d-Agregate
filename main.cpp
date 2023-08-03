@@ -111,6 +111,14 @@ int main()
         //generated_bodies[index]->addFixture(&tempBallFixtDef);
     }
 
+    for(std::size_t counter = 0; counter < 90; ++counter )
+    {
+        first_cluster.destroyBody(first_cluster.getBodyCluster().back());
+    }
+
+
+
+
 
     /*** Chain testing ***/
     b2BodyDef chainBodyDef;
