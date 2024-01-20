@@ -2577,11 +2577,12 @@
 1684064051 /home/lister/Desktop/SFML-Box2D-thing/include/SfFixtureGraphical.h
 	"Graphics.hpp"
 
-1691050995 source:/home/lister/Desktop/SFML-Box2D-thing/main.cpp
+1705737211 source:/home/lister/Desktop/SFML-Box2D-thing/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<Graphics.hpp>
 	"box2d.h"
+	"box2d-main/include/box2d/box2d.h"
 	"ConstantSettings.h"
 	"Transl8.h"
 	"EdgyStripe.h"
@@ -2842,13 +2843,51 @@
 1684658699 source:/home/lister/Desktop/SFML-Box2D-thing/src/transl8.cpp
 	"Transl8.h"
 
-1691057495 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFB2Cluster.cpp
+1691057817 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFB2Cluster.cpp
 	"SFB2Cluster.h"
 
-1690894117 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2Cluster.h
+1705737861 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2Cluster.h
 	<memory>
 	<vector>
 	"Graphics.hpp"
 	"box2d.h"
 	"SFB2Body.h"
+
+1700395721 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFB2World.cpp
+	"SFB2World.h"
+
+1699719850 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2World.h
+	<memory>
+	<vector>
+	"box2d.h"
+	"SFB2Cluster.h"
+
+1539632499 /usr/include/SFML/Graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
 

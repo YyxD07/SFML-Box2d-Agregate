@@ -2,7 +2,7 @@
 #include <SFML/Window.hpp>
 #include <Graphics.hpp>
 #include "box2d.h"
-//#include "box2d-main/include/box2d/box2d.h"
+#include "box2d-main/include/box2d/box2d.h"
 
 #include "ConstantSettings.h"
 
@@ -85,7 +85,7 @@ int main()
     /**Primitive body generator*/
 
     B2ToSf::SFB2Cluster first_cluster(10);
-    std::size_t no_of_generated = 100;
+    std::size_t no_of_generated = 200;
     //std::vector<std::unique_ptr<B2ToSf::SFB2Body>> generated_bodies;
     //generated_bodies.reserve(10);
 
@@ -111,10 +111,10 @@ int main()
         //generated_bodies[index]->addFixture(&tempBallFixtDef);
     }
 
-    for(std::size_t counter = 0; counter < 90; ++counter )
+    /*for(std::size_t counter = 0; counter < 90; ++counter )
     {
         first_cluster.destroyBody(first_cluster.getBodyCluster().back());
-    }
+    }*/
 
 
 

@@ -16,7 +16,7 @@ namespace B2ToSf
 This is only a container for holding bodies. It does not create them. It can hold bodies belonging to different
 b2Worlds. There is probably no reason to mix different b2Worlds, but you could do it in this container.
 
-Member function draw, draws all the bodies held in a batch. This means that clusters can be used to manage sequence of
+Member function draw(), draws all the bodies held in a batch. This means that clusters can be used to manage sequence of
 drawing to screen of whole batches of bodies.**/
 
 class SFB2Cluster: public sf::Drawable
@@ -41,11 +41,6 @@ class SFB2Cluster: public sf::Drawable
 
     protected:
         std::vector<std::unique_ptr<B2ToSf::SFB2Body>> m_body_cluster;
-
-    private:
-
-
-
 
 };
 
