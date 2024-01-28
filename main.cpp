@@ -16,6 +16,8 @@
 
 #include "SFB2Cluster.h"
 
+#include "SFB2World.h"
+
 
 
 int main()
@@ -25,7 +27,7 @@ int main()
     b2Vec2 gravity(0.0f, -5.0f);
     b2World world(gravity);
         // window is kind of world-ish?
-        sf::RenderWindow worldViable(sf::VideoMode(UniversalConstants::kWindowWidth,UniversalConstants::kWindowHeight),"?");
+        sf::RenderWindow worldVisable(sf::VideoMode(UniversalConstants::kWindowWidth,UniversalConstants::kWindowHeight),"?");
 
     /**ground box executed with static body*/
     b2BodyDef groundBodyDef;
@@ -84,8 +86,13 @@ int main()
 
     /**Primitive body generator*/
 
-    B2ToSf::SFB2Cluster first_cluster(10);
     std::size_t no_of_generated = 200;
+
+    std::unique_ptr<B2ToSf::SFB2Cluster> first_cluster =
+    std::make_unique<B2ToSf::SFB2Cluster>(no_of_generated);
+
+    //B2ToSf::SFB2Cluster first_cluster(10);
+
     //std::vector<std::unique_ptr<B2ToSf::SFB2Body>> generated_bodies;
     //generated_bodies.reserve(10);
 
@@ -97,7 +104,7 @@ int main()
 
         std::unique_ptr<B2ToSf::SFB2Body> temp = std::make_unique<B2ToSf::SFB2Body>(world.CreateBody(&loc_agregate_def));
         //generated_bodies.emplace_back(std::move(temp));
-        B2ToSf::SFB2Body & temp_body = first_cluster.addBody(std::move(temp));
+        B2ToSf::SFB2Body & temp_body = first_cluster->addBody(std::move(temp));
 
         b2CircleShape tempBallShape;
         tempBallShape.m_radius = 2;
@@ -394,6 +401,12 @@ int main()
     completeFan.setPosition(sf::Vector2f(-500,0));
 
 
+    /***Testing SFB2World***/
+    B2ToSf::SFB2World only_world(2);
+    only_world.addCluster(std::move(first_cluster));
+
+    only_world.destroyCluster(only_world.getClusterAgregate()[0]);
+
 
 
 
@@ -420,19 +433,21 @@ int main()
     //observer.setViewport(sf::FloatRect(0.f,0.f,1.f,1.f));
 
 
-    worldViable.setView(observer);
+    worldVisable.setView(observer);
 
 
 
-    while(worldViable.isOpen())
+
+
+    while(worldVisable.isOpen())
     {
         sf::Event event;
 
-        while(worldViable.pollEvent(event))
+        while(worldVisable.pollEvent(event))
         {
             if(event.type == sf::Event::Closed)
             {
-                worldViable.close();
+                worldVisable.close();
             }
         }
 
@@ -453,7 +468,7 @@ int main()
 
                 if(agregateSensor.getBody()->GetContactList() && (agregateSensor.getBody()->GetContactList())->contact->IsTouching())
                 {
-                    agregatePlayer.getBody()->SetLinearVelocity(b2Vec2(agregatePlayer.getBody()->GetLinearVelocity().x,30));
+                    agregatePlayer.getBody()->SetLinearVelocity(b2Vec2(agregatePlayer.getBody()->GetLinearVelocity().x,35));
                     //body->ApplyLinearImpulseToCenter(b2Vec2(0,10),true);
                 }
 
@@ -479,7 +494,7 @@ int main()
 
             //float angle = Transl8::getRotation(body);
 
-            worldViable.clear();
+            worldVisable.clear();
 
             agregatePlayer.reacquaintSfB2Fixts();
             //dynamicBodyVisable.setPosition(Transl8::vec2(position));
@@ -496,29 +511,30 @@ int main()
             observer.setCenter(agregatePlayer.getFixtVec()[0].first->getPosition());
 
 
-            first_cluster.reacquaintSFB2Fixts();
+            only_world.reacquaintSFB2Fixts();
+            //first_cluster.reacquaintSFB2Fixts();
 
 
-            worldViable.setView(observer);
-            worldViable.draw(agregateGroundBox);
+            worldVisable.setView(observer);
+            worldVisable.draw(agregateGroundBox);
 
 
 
-            worldViable.draw(first_cluster);
-            worldViable.draw(agregateTerraNova);
-            worldViable.draw(agregateEdge);
-            worldViable.draw(agregateCircle);
-            worldViable.draw(ersteTrakc);
-            worldViable.draw(zweiteTrakc);
-            worldViable.draw(incompleteFan);
-            worldViable.draw(completeFan);
-            worldViable.draw(agregateChain);
-            worldViable.draw(agregateLoopedChain);
-            worldViable.draw(agregateBall);
-            worldViable.draw(agregatePlayer);
-            worldViable.draw(agregateBallAndChain);
-            worldViable.draw(agregateSensor);
-            worldViable.display();
+            worldVisable.draw(only_world);
+            worldVisable.draw(agregateTerraNova);
+            worldVisable.draw(agregateEdge);
+            worldVisable.draw(agregateCircle);
+            worldVisable.draw(ersteTrakc);
+            worldVisable.draw(zweiteTrakc);
+            worldVisable.draw(incompleteFan);
+            worldVisable.draw(completeFan);
+            worldVisable.draw(agregateChain);
+            worldVisable.draw(agregateLoopedChain);
+            worldVisable.draw(agregateBall);
+            worldVisable.draw(agregatePlayer);
+            worldVisable.draw(agregateBallAndChain);
+            worldVisable.draw(agregateSensor);
+            worldVisable.display();
             clap.restart();
         }
 

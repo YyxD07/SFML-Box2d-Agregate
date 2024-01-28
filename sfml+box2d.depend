@@ -2577,7 +2577,7 @@
 1684064051 /home/lister/Desktop/SFML-Box2D-thing/include/SfFixtureGraphical.h
 	"Graphics.hpp"
 
-1705737211 source:/home/lister/Desktop/SFML-Box2D-thing/main.cpp
+1706447051 source:/home/lister/Desktop/SFML-Box2D-thing/main.cpp
 	<iostream>
 	<SFML/Window.hpp>
 	<Graphics.hpp>
@@ -2589,6 +2589,7 @@
 	"EdgyFan.h"
 	"SFB2Body.h"
 	"SFB2Cluster.h"
+	"SFB2World.h"
 
 1640912749 /home/lister/Desktop/SFML-Box2D-thing/box2d-main/include/box2d/box2d.h
 	"b2_settings.h"
@@ -2853,10 +2854,10 @@
 	"box2d.h"
 	"SFB2Body.h"
 
-1700395721 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFB2World.cpp
+1706449235 source:/home/lister/Desktop/SFML-Box2D-thing/src/SFB2World.cpp
 	"SFB2World.h"
 
-1699719850 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2World.h
+1706443142 /home/lister/Desktop/SFML-Box2D-thing/include/SFB2World.h
 	<memory>
 	<vector>
 	"box2d.h"

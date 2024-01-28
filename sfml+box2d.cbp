@@ -16,6 +16,7 @@
 					<Add option="-g" />
 					<Add directory="include" />
 					<Add directory="box2d-main/include/box2d" />
+					<Add directory="/usr/include/SFML" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />

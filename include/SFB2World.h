@@ -11,10 +11,10 @@
 
 namespace B2ToSf
 {
-class SFB2World
+class SFB2World: public sf::Drawable
 {
     public:
-        SFB2World();
+        SFB2World(std::size_t size_of_cluster_agregate);
         virtual ~SFB2World();
 
         virtual void draw(sf::RenderTarget&, sf::RenderStates) const; //Used by sf::RenderWinodw to draw all clusters
