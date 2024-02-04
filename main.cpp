@@ -84,9 +84,9 @@ int main()
     //agregateBall.destroyFixture(second_r_iter - 1);
     //agregateBall.destroyFixture(agregateGroundBox.getFixtVec()[1].second);
 
-    /**Primitive body generator*/
+    /**Primitive body generator 1*/
 
-    std::size_t no_of_generated = 200;
+    std::size_t no_of_generated = 60;
 
     std::unique_ptr<B2ToSf::SFB2Cluster> first_cluster =
     std::make_unique<B2ToSf::SFB2Cluster>(no_of_generated);
@@ -118,10 +118,39 @@ int main()
         //generated_bodies[index]->addFixture(&tempBallFixtDef);
     }
 
-    /*for(std::size_t counter = 0; counter < 90; ++counter )
+
+    /**Primitive body generator 2*/
+
+    std::size_t no_of_generated2 = 60;
+
+    std::unique_ptr<B2ToSf::SFB2Cluster> second_cluster =
+    std::make_unique<B2ToSf::SFB2Cluster>(no_of_generated2);
+
+
+    for(std::size_t index = 0; index < no_of_generated2; ++ index)
     {
-        first_cluster.destroyBody(first_cluster.getBodyCluster().back());
-    }*/
+        b2BodyDef loc_agregate_def;
+        loc_agregate_def.type = b2_dynamicBody;
+        loc_agregate_def.position.Set(-140 + 3.f * index, index * 10);
+
+        std::unique_ptr<B2ToSf::SFB2Body> temp = std::make_unique<B2ToSf::SFB2Body>(world.CreateBody(&loc_agregate_def));
+        //generated_bodies.emplace_back(std::move(temp));
+        B2ToSf::SFB2Body & temp_body = first_cluster->addBody(std::move(temp));
+
+        b2CircleShape tempBallShape;
+        tempBallShape.m_radius = 0.5;
+        b2FixtureDef tempBallFixtDef;
+        tempBallFixtDef.shape = &tempBallShape;
+        tempBallFixtDef.restitution = 0.7f;
+        tempBallFixtDef.friction = 0.1;
+        tempBallFixtDef.density = 0.5;
+
+        temp_body.addFixture(&tempBallFixtDef);
+        //generated_bodies[index]->addFixture(&tempBallFixtDef);
+    }
+
+
+
 
 
 
@@ -404,8 +433,9 @@ int main()
     /***Testing SFB2World***/
     B2ToSf::SFB2World only_world(2);
     only_world.addCluster(std::move(first_cluster));
+    only_world.addCluster(std::move(second_cluster));
 
-    only_world.destroyCluster(only_world.getClusterAgregate()[0]);
+    //only_world.destroyCluster(only_world.getClusterAgregate()[0]);
 
 
 
