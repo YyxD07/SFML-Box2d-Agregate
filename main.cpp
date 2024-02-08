@@ -86,7 +86,7 @@ int main()
 
     /**Primitive body generator 1*/
 
-    std::size_t no_of_generated = 60;
+    std::size_t no_of_generated = 61;
 
     std::unique_ptr<B2ToSf::SFB2Cluster> first_cluster =
     std::make_unique<B2ToSf::SFB2Cluster>(no_of_generated);
@@ -121,7 +121,7 @@ int main()
 
     /**Primitive body generator 2*/
 
-    std::size_t no_of_generated2 = 60;
+    std::size_t no_of_generated2 = 300;
 
     std::unique_ptr<B2ToSf::SFB2Cluster> second_cluster =
     std::make_unique<B2ToSf::SFB2Cluster>(no_of_generated2);
@@ -131,7 +131,7 @@ int main()
     {
         b2BodyDef loc_agregate_def;
         loc_agregate_def.type = b2_dynamicBody;
-        loc_agregate_def.position.Set(-140 + 3.f * index, index * 10);
+        loc_agregate_def.position.Set(-50 + 3.f, index * 10);
 
         std::unique_ptr<B2ToSf::SFB2Body> temp = std::make_unique<B2ToSf::SFB2Body>(world.CreateBody(&loc_agregate_def));
         //generated_bodies.emplace_back(std::move(temp));
